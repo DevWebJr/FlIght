@@ -24,27 +24,35 @@
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home
+                        <a class="nav-link active" href="#">Tito Airlines
                             <span class="visually-hidden">(current)</span>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container">
-        <h1>Afficher les vols</h1>
-        <button id="btnShowData" class="btn btn-info btn-block" onclick="displayFlights()">
-            <i class="fas fa-hand-pointer"></i>
-        </button>
-        <div class="col-12 col-sm-6 d-flex justify-content-center m-3 principal-box">
-            <div class="box-container">
-                <div class="box-child"></div>
+        <div class="box-container">
+            <div class="container-fluid text-center">
+                    <h3 class="mt-3 text-info">Tous les vols</h3>
+                    <table id="tab" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col"><i class="fas fa-space-shuttle text-center text-primary m-5" title="icao24"></i></th>
+                                <th scope="col"><i class="fab fa-battle-net text-center text-primary m-5" title="callsign"></i></th>
+                                <th scope="col"><i class="fas fa-long-arrow-alt-right text-center text-success m-5"
+                                        title="latitude"></i></th>
+                                <th scope="col"><i class="fas fa-long-arrow-alt-up text-center text-success m-5" title="longitude"></i>
+                                </th>
+                                <th scope="col"><i class="fas fa-plane-departure text-center text-warning m-5" title="depart"></i></th>
+                                <th scope="col"><i class="fas fa-plane-arrival text-center text-warning m-5" title="arrivée"></th>
+                                <th scope="col"><i class="fas fa-search-location text-center text-info m-5" title="consulter"></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
             </div>
-        </div>
     </div>
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
