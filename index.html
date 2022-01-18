@@ -31,6 +31,7 @@
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="box-container">
             <div class="container-fluid text-center">
@@ -43,13 +44,26 @@
                                 <th scope="col"><i class="fas fa-long-arrow-alt-right text-center text-success m-5" title="latitude"></i></th>
                                 <th scope="col"><i class="fas fa-long-arrow-alt-up text-center text-success m-5" title="longitude"></i></th>
                                 <th scope="col"><i class="fas fa-plane-departure text-center text-warning m-5" title="barometric altitude"></i></th>
-                                <th scope="col"><i class="fas fa-search-location text-center text-info m-5" title="consulter"></th>
+                                <th scope="col"><i class="fas fa-search-location text-center text-info m-5" title="consulter"></i></th>
+                                <th scope="col"><i class="fas fa-temperature-low text-center text-danger m-5" title="meteo"></i></th>
                             </tr>
                         </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"></td>
+                                <td class="text-center"><button id="btn-city" type="button" class="btn btn-outline-info"><i class="fas fa-hand-pointer" title="details"></i></button></td>
+                                <td id="meteo" class="text-center"></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
     </div>
+
     <script src="../assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
