@@ -37,8 +37,7 @@ CREATE TABLE IF NOT EXISTS `aircraft` (
   `callsign` varchar(255) DEFAULT NULL,
   `latitude` float DEFAULT NULL,
   `longitude` float DEFAULT NULL,
-  `estDepartureAirport` varchar(255) DEFAULT NULL,
-  `estArrivalAirport` varchar(255) DEFAULT NULL,
+  `baro_altitude` varchar(255) DEFAULT NULL
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 COMMIT;
